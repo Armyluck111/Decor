@@ -1,0 +1,97 @@
+.cursor{
+    cursor: pointer !important;
+}
+.font-lg{
+    font-size: 50px !important;
+}
+.font-2xl{
+    font-size: 80px !important;
+}
+
+.square{
+    width: 80px;
+    height: 80px;
+}
+
+.circle{
+    width: 30px;
+    height: 30px;
+    background-color: #1F1F1F;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    position: relative;
+}
+.line::after {
+    content: "";
+    width: 1px;
+    height: 50px; 
+    background-color: #9B9B9B
+    ;
+    position: absolute;
+    top: 0;
+    left: 22px;
+    transform: translate(-9px,40px); 
+}
+.srv{
+    position: relative;
+}
+.srv::before{
+    content: "";
+    width: 60px;
+    height: 2px;
+    background-color: #1F1F1F;
+    position: absolute;
+    right: 100%; 
+    top: 50%;
+    transform: translateY(-50%);
+}
+.translate{
+    transform: translate(-50%,-20%) !important;
+}
+.square-icon{
+    width: 30px;
+    height: 30px;
+    background-color: #313131;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-control{
+    outline: 0 !important;
+    box-shadow: none !important;
+
+}
+@media screen and (max-width:1350px) {
+    .translate-middle-x{
+        transform: translate(0) !important;
+    }
+}
+@media screen and (max-width:998px) {
+    .srv::before{
+        display: none !important;
+    }
+    .translate{
+        position: static !important;
+        transform: none !important;
+    }
+    .image{
+        display: none !important;
+    }
+    
+    
+}
+@media screen and (max-width: 768px) {
+    
+}
+@media screen and (max-width: 576px) {
+    .font-2xl{
+        font-size: 50px !important;
+    }
+    .font-lg{
+        font-size: 40px !important;
+    }
+}
